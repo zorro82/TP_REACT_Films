@@ -20,9 +20,9 @@ function Layout() {
               <li> 
                 <Link to="/List" className="nav-link">List</Link>
               </li>
-              <li> 
+              {/* <li> 
                 <Link to="/Film" className="nav-link">Film</Link>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>
