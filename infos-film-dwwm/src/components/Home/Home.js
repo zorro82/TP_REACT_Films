@@ -2,6 +2,7 @@
 import React from 'react';
 import { useState } from 'react';
 import './Home.css';
+// import '../Layout/Layout'
 import logo2 from '../images/dwwm_1.png';
 
 function Home() {
@@ -19,12 +20,20 @@ function Home() {
       />
       <h1>TP React Développeur Web et Web Mobile</h1>
       <p>Bienvenue sur la page d'accueil.</p>
-      <button
-        className="btn btn-primary mt-3"
+      {/* <button
+        className="btn btn-primary mt-1"
         onClick={toggleAnimation}
       >
-        Modifier l’animation
-      </button>
+        Cliquer AFPA
+      </button> */}
+      <a
+          className="App-link"
+          href="https://www.afpa.fr/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Info AFPA
+      </a>
     </div>
   );
 }

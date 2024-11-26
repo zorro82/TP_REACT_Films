@@ -1,5 +1,74 @@
 /* fichier Film.css */
-.nav-bar {
+.film {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  overflow: hidden;
+  width: 100%;
+  max-width: 300px;
+  padding: 15px;
+  margin-bottom: 20px; /* Ajouter de l'espace entre les cartes */
+  height: auto; /* Laisser la hauteur du conteneur s'adapter au contenu */
+}
+
+.film img {
+  width: 100%;
+  max-height: 400px; /* Fixe la hauteur maximale de l'image */
+  object-fit: cover; /* Assure que l'image s'adapte au conteneur */
+  margin-bottom: 10px;
+}
+
+/* .film {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s ease;
+} */
+
+.film img {
+  width: 100%;
+  max-height: 400px; /* Fixe la hauteur maximale de l'image */
+  object-fit: cover; /* Assure que l'image s'adapte au conteneur */
+  margin-bottom: 10px;
+}
+
+/* .film img {
+  width: 200px;
+  height: auto;
+  margin-bottom: 15px;
+  border-radius: 8px;
+} */
+
+.film:hover {
+  transform: scale(1.05);
+}
+
+.film-abstract {
+  font-size: 0.9em;
+  color: #666;
+  text-align: justify;
+  padding: 10px 0;
+  height: auto; /* Laisser la hauteur du texte s'ajuster au contenu */
+}
+
+/* .film-abstract {
+  font-size: 14px;
+  color: #333;
+  text-align: center;
+  padding: 10px;
+} */
+
+
+/* .nav-bar {
   background-color: #333;
   overflow: hidden;
 }
@@ -40,4 +109,4 @@
   font-size: 14px;
   color: #333;
   text-align: center;
-}
+} */

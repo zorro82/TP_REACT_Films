@@ -21,22 +21,24 @@ function Search() {
   };
 
   return (
-    <div className="search">
-      <p>Recherchez ici vos films préférés.</p>
-      <form onSubmit={handleSubmit}>
-        <fieldset>
-          <label htmlFor="idSearch">Votre recherche</label>
-          <input
-            id="idSearch"
-            name="search"
-            type="text"
-            value={search}
-            onChange={handleChange}
-          />
-        </fieldset>
-        <input type="submit" value="Rechercher" />
-      </form>
-    </div>
+    // <div className="list-page">
+      <div className="search">
+        <p>Recherchez ici vos films préférés.</p>
+        <form onSubmit={handleSubmit}>
+          <fieldset>
+            <label htmlFor="idSearch">Votre recherche</label>
+            <input
+              id="idSearch"
+              name="search"
+              type="text"
+              value={search}
+              onChange={handleChange}
+            />
+          </fieldset>
+          <input type="submit" value="Rechercher" />
+        </form>
+      </div>
+  // </div>
   );
 }
 

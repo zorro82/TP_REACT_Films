@@ -9,29 +9,25 @@ import Layout from './Layout/Layout';
 import Search from './Search/Search';
 import List from './List/List';
 import Film from './Film/Film';
+import Footer from './Footer/Footer';
 
 function App() {
 
   return (
-    // <Router>
-      <div className="App">
-        {/* <nav>
-          <Link to="/">Home</Link> | <Link to="/about">About</Link>
-        </nav> */}
+    <div className="App">
+      <Layout />
+      <div className="content-wrapper">
         <Routes>
-          <Route path="/" element={<Layout />}>
             <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} /> {/* Ajout de la route About */}
+            <Route path="/about" element={<About />} />
             <Route path="/search" element={<Search />} />
-             {/* Route pour accéder à la page List sans paramètre */}
             <Route path="/List" element={<List />} />
-             {/* Route pour accéder à la page List avec un paramètre */}
             <Route path="/List/:data" element={<List />} />
             <Route path="/Film" element={<Film />} />
-          </Route>
         </Routes>
       </div>
-    // </Router>
+      <Footer />
+    </div>
   );
 }
 

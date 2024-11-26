@@ -1,7 +1,10 @@
 /* fichier Search.css */
 .container {
     margin-top: 100px;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* text-align: center; */
   }
 
 .search {
@@ -17,6 +20,17 @@
 }
 
 .search input {
-    Margin-left: 100px;
+    /* Margin-left: 100px; */
     Font-size: 1.4rem;
 }
+
+/* .list-page {
+    background-color: #f0f0f0;
+    padding: 40px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1000px; /* Ajoute de la marge supplémentaire pour éviter le chevauchement */
+    /*color: black;
+  } */
